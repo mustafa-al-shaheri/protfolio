@@ -1,27 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Russo+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap'); */
 *{
     padding: 0;
     margin: 0;
+    
 }
+.blast:hover{
+    transform:  scale3d(1.5, 1.5, 1.5) rotate(350deg) ;
+    color: rgb(8, 253, 216);
+    transition:all .2s ease;
+    
+}
+.about22:hover{
+    transform:  scale3d(1.5, 1.5, 1.5) rotate(350deg) ;
+    color: rgb(8, 253, 216);
+display: inline-block;
+transition:all .2s ease;
+    
+}
+.skill22:hover{
+    transform:  scale3d(1.5, 1.5, 1.5) rotate(-350deg) ;
+    color: rgb(8, 253, 216);
+display: inline-block;
+transition:all .2s ease;
+}
+.experience22:hover{
+    transform:  scale3d(1.5, 1.5, 1.5) rotate(350deg) ;
+    color: rgb(8, 253, 216);
+display: inline-block;
+transition:all .2s ease;
+}
+.contact22:hover{
+    transform:  scale3d(1.5, 1.5, 1.5) rotate(350deg) ;
+    color: rgb(8, 253, 216);
+display: inline-block;
+transition:all .2s ease;
+}
+/* .blast{
+    transition: 5s  ;
+transform: rotate(360deg);
+    
+} */
 body {
     font: 300 11px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif;
     background: #181818f5;
+    min-height: 100%;
+   
+
 }
+
+.mletter{
+    transform: rotate(360deg);
+    display: inline-block;
+    font-family: 'Russo One', sans-serif;
+    transition: 1s ;
+
+
+}
+
+/* .background{
+    background: #181818f5;
+} */
 .logo {
-    background-color: #212121;
+    /* background-color: #181818; */
     display: block;
     margin-top: 15px;
     /* padding: 8px 0; */
 }
 .logo img{
-    width: 59px;
-    height: 50px;
-    /* background-color: #070707; */
+    width: 40px;
+    height: 35px;
+    /* background-color: #181818;; */
 }
 .navbar{
     background: #181818;
     width: 60px;
     height: 100%;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     top: 0;
     z-index: 3;
     min-height: 500px;
@@ -58,12 +114,14 @@ body {
     transition: all .5s ease-out;
 }
 
-.navicon a:hover {
+/* .navicon a:hover {
     color: #08fdd8;
     opacity: 1;
+    font-size: 15px; */
+
     /* display: none; */
 
-}
+/* } */
 .navicon a:hover:after{
     opacity: 1;
 }
@@ -94,8 +152,51 @@ body {
     height: 100%;
     position: absolute;
 }
+#navicon{
+    display: none;
+    color: rgb(8, 253, 216);
+    background:  rgb(8, 253, 216);
+    font-size: 35px;
+
+}
+/* .navbar .navicon #mousehover1  a:first-child {
+    content: 'HOME';
+} */
+.mousehover{
+    display: inline;
+}
+.home1{
+    display: none; 
+    color: rgb(8, 253, 216);
+    font-size: 12px;
+   
+}
+.about1{
+    display: none; 
+    color: rgb(8, 253, 216);
+    font-size: 12px;
+   
+}
+.skill1{
+    display: none; 
+    color: rgb(8, 253, 216);
+    font-size: 12px;
+   
+}
+.experience1{
+    display: none; 
+    color: rgb(8, 253, 216);
+    font-size: 12px;
+   
+}
+.contact1{
+    display: none; 
+    color: rgb(8, 253, 216);
+    font-size: 12px;
+    
+}
 .container {
-    width: 100%;
+    width: 90%;
     will-change: contents;
     height: 90%;
     min-height: 566px;
@@ -112,23 +213,34 @@ body {
     transform-style: preserve-3d;
 }
 
+.tags1 {
+    color: #515152;
+    position: absolute;
+    /* bottom: 0;
+    left: 80px; */
+    font-size: 18px;
+    font-family: 'La Belle Aurore',cursive;
+}
 .tags {
     color: #515152;
     position: absolute;
-    bottom: 0;
-    left: 80px;
+    bottom: 65px;
+    left: 32px;
     font-size: 18px;
     font-family: 'La Belle Aurore',cursive;
 }
 
-
+.sec{
+    height: 100%;
+    width: 100%;
+}
 
 .home-page h1 {
     color: #fff;
     font-size: 56px;
     line-height: 53px;
     margin: 0;
-    font-family: font-file-82132;
+    font-family: 'Russo One', sans-serif;
     font-weight: 400;
 }
 .container img{
@@ -167,11 +279,13 @@ body {
     font-size: 56px;
     line-height: 53px;
     margin: 0;
-    font-family: font-file-82132;
+    font-family: 'Russo One', sans-serif;
     font-weight: 400;
+    margin-top: 100px;
+    margin-left: 15px;
 }
 h1 {
-    font-size: 60px !important;
+    font-size: 35px !important;
 }
 .home-page h2 {
     color: #8d8d8d;
@@ -203,16 +317,107 @@ h1 {
     -webkit-animation: myanim2 1s 1.7s backwards;
     animation: myanim2 1s 1.7s backwards;
 }
-
+.bulb {
+    width: 177px;
+    height: 44px;
+    position: absolute;
+    top: 12%;
+    left: 9%;
+    opacity: 0;
+}
+#body{
+    height: 100%;
+}
 #image{
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
-    width: 30%;
+    width: 40%;
     height: 100%;
+    margin-left: 150px;
+    transition: all .5s ease-out;
+    transform:  scale3d(0.9, 0.9, 0.9) ; 
+
 
 }
 #image .image{
-width: 100%;
-height: 100%;
+    width: 120%;
+    height: 111%;
+}
+
+}
+
+
+.top-tags{
+    bottom: auto;
+    top: 0;
+}
+.container.about .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+}
+
+.container.about .text-zone h1 {
+    font-size: 53px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
+}
+
+.container.about .text-zone h1:before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -10px;
+    left: -10px;
+}
+.container.about .text-zone h1:after {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    left: -30px;
+    bottom: -20px;
+    margin-left: 20px;
+}
+.container.about .text-zone p {
+    font-size: 13px;
+    color: #fff;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+}
+.clear {
+    clear: both;
+}
+.text-zone p {
+    font-size: 14px !important;
+    color: #fff;
+    line-height: 20px;
+}
+/* .iconHoverOn{
+display: none;
+
+
+}
+.iconHoverOff{
+    display: inline-block;
+} */
+
+@media screen and (max-width: 820px) {
+
 }
